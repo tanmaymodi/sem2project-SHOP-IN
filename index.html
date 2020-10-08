@@ -1,0 +1,404 @@
+{% block content %}
+{% load static %}
+<script href="{% static 'one/scripts/dropdown.js' %}"></script>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="{% static 'one/content/jumbotron.css' %}">
+    <link rel="stylesheet" href="{% static 'one/content/carousel.css' %}">
+    
+
+
+
+	<link href="{% static 'one/content/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'one/content/bootstrap-grid.css' %}" rel="stylesheet">
+  <link href="{% static 'one/content/bootstrap-reboot.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+	<style>
+	body{
+    background-image:url('{% static 'images/blurred.jpg' %}');
+  background-size:cover;
+  background-attachment: fixed;
+  }
+  .navv{
+  background-image:url("{% static 'images/g1.jpg' %}");}
+	.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+ .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+  </style>
+
+  </head>
+
+  <body>
+<div class="ban">
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top navv">
+      <a class="navbar-brand" href="#"><div class="logo"> <img src="{% static 'images\logo3.png' %}" height="40px" width="135px"></div></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  </div> 
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+	</div>
+	<center>
+	
+	</center>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+	  <div class="container">
+        <div class="container"><center>
+		<img src="{% static 'images\logo3.png' %}" height="40%" width="40%" >
+
+		</center>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+		</div>
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4 num">
+		  <center>
+            <img src="{% static 'images/gbasket1.png' %}" width="60%" height="45%">
+            <h1> GROCERIES </H1>
+          </center> 
+		  <center>
+		   <a class="nav-link dropdown-toggle mandy" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Details</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#"><img src="{% static 'images/milk.png' %}" height="50px" width="50px"> Milk Products</a>
+              <a class="dropdown-item" href="#"><img src="{% static 'images/vege.png' %}" height="50px" width="50px"> Vegetables and Fruits</a>
+              <a class="dropdown-item" href="#"><img src="{% static 'images/chips2.png' %}" height="50px" width="50px"> Snacks</a>
+			  <a class="dropdown-item" href="#"><img src="{% static 'images/colddrink.png' %}" height="50px" width="50px"> Beverages</a>
+            </div>
+		   </center>
+          </div>
+          <div class="col-md-4 num">
+            <center>
+            <img src="{% static 'images/fashion1.png' %}" width="60%" height="45%">
+            <h1> FASHION </H1>
+          </center> 
+          <center>		  
+            <a class="nav-link dropdown-toggle mandy" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Details</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#"><img src="{% static 'images/mmodel.png' %}" height="50px" width="50px">Men's Fashion</a>
+              <a class="dropdown-item" href="#"><img src="{% static 'images/wmodel.png' %}" height="50px" width="50px">Women's Fashion</a>
+              <a class="dropdown-item" href="#"><img src="{% static 'images/shoes.png' %}" height="50px" width="50px">Footwear</a>
+			  </div>
+          </center>
+		  </div>
+          <div class="col-md-4 num">
+		  <center>
+            <img src="{% static 'images/tools2.png' %}" width="60%" height="45%"><br>
+            <h1> TOOLS </H1>
+          </center> 
+		  <center>
+          <a class="nav-link dropdown-toggle mandy" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Details</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#"><img src="{% static 'images/btools.png' %}" height="50px" width="50px">Basic Tools</a>
+              <a class="dropdown-item" href="#"><img src="{% static 'images/toolkit.png' %}"toolkit height="50px" width="50px">Toolkits</a>
+			  </div>			
+			  </center>
+          </div>
+		 </div>
+	  </div>
+	  <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4 num">
+		  <center>
+            <img src="{% static 'images/makeup.png' %}" width="60%" height="45%">
+            <h1> BEAUTY PRODUCTS</H1>
+          </center> 
+		  <center>
+		  <a class="nav-link dropdown-toggle mandy" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Details</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#"><img src="{% static 'images/makeup.jpg' %}" height="50px" width="50px">Makeup</a>
+              <a class="dropdown-item" href="#"><img src="{% static 'images/bcream.png' %}" height="50px" width="50px">Creams & Lotions</a>
+			  </div>
+		  </center>
+		  </div>
+          <div class="col-md-4 num">
+            <center>
+            <img src="{% static 'images/general.png' %}" width="100%" height="100%">
+            <h1> GENERALS </H1><br>
+          </center>
+          <center>
+          <a class="nav-link dropdown-toggle mandy" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Details</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#"><img src="{% static 'images/shampoo.png' %}" height="50px" width="50px">Shampoo & Conditioners</a>
+              <a class="dropdown-item" href="#"><img src="{% static 'images/deter.png' %}" height="50px" width="50px">Detergent & Soaps</a>
+              <a class="dropdown-item" href="#"><img src="{% static 'images/deo.png' %}" height="50px" width="50px">Deos & Bodysprays</a>
+			  </div>		  
+		  </center>
+		  </div>
+          <div class="col-md-4 num">
+		  <center>
+            <img src="{% static 'images/plastic.png' %}" width="60%" height="45%"><br>
+            <h1> PLASTIC PRODUCTS </H1>
+          </center> 
+		  <center>
+		  <a class="nav-link dropdown-toggle mandy" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Details</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#"><img src="{% static 'images/ct.jpg' %}" height="50px" width="50px">Containers</a>
+              <a class="dropdown-item" href="#"><img src="{% static 'images/kplastic.png' %}" height="50px" width="50px">Kitchenware</a>
+			  </div>
+			</center>
+          </div>
+        </div>
+
+
+        <hr>
+
+      </div>
+	  <div class="latest">
+	  <center>
+	  LATEST ARRIVALS 
+	  </center>
+	  </div>
+<br>
+
+
+<BR><BR>
+<div class="slideshow-container">
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="{% static 'images/model2.jpg' %}" style="width:100%;margin-bottom:0px;">
+  <div class="text"> 25% off on Men's Fashion <br> upto ₹2000 </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="{% static 'images/model1.jpg' %}" style="width:100%">
+  <div class="text"> 25% off on Women's Fashion <br> upto ₹2000 </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="{% static 'images/snack.jpg' %}" style="width:100%">
+  <div class="text"> 10% off on selected snacks <br> upto ₹500 </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="{% static 'images/shampoo.jpg' %}" style="width:100%">
+  <div class="text"> 40% off on selected shampoo and conditioners <br> upto ₹500 </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+<center>
+<div>
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>  
+</div>
+</center>
+</div>
+<br>
+
+
+</main><hr>
+<header>
+      <div class="collapse  navv" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-white">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark  box-shadow navv">
+        <div class="container d-flex justify-content-between ">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            <strong>Album</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+
+    </header>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script href="{% static 'one/scripts/jq.js' %}"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script href="{% static 'one/scripts/popper.js' %}"></script>
+    <script href="{% static 'one/scripts/bootstrap.min.js' %}"></script>
+    <script href="{% static 'one/scripts/holder.min.js' %}"></script>
+    <script href="{% static 'one/scripts/slider.js' %}"></script>
+    <script href="{% static 'one/scripts/dropdown.js' %}"></script>
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<script type="text/javascript">
+  <script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<script src="{% static 'one/scripts/alert.js' %}"></script>
+<script src="{% static 'one/scripts/alert.js.map' %}"></script>
+    <script src="{% static 'one/scripts/button.js' %}"></script>
+        <script src="{% static 'one/scripts/button.js.map' %}"></script>
+    <script src="{% static 'one/scripts/carousel.js' %}"></script>
+    <script src="{% static 'one/scripts/collapse.js' %}"></script>
+    <script src="{% static 'one/scripts/dropdown.js' %}"></script>
+    <script src="{% static 'one/scripts/dropdown.js.map' %}"></script>
+
+    <script src="{% static 'one/scripts/index.js' %}"></script>
+        <script src="{% static 'one/scripts/index.js.map' %}"></script>
+    <script src="{% static 'one/scripts/modal.js' %}"></script>
+    <script src="{% static 'one/scripts/popover.js' %}"></script>
+    <script src="{% static 'one/scripts/scrollspy.js' %}"></script>
+    <script src="{% static 'one/scripts/tab.js' %}"></script>
+    <script src="{% static 'one/scripts/tooltip.js' %}"></script>
+    <script src="{% static 'one/scripts/util.js' %}"></script>
+	
+  </body>
+</html>
+{% endblock %}
